@@ -1,0 +1,27 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore environment-specific files
+.env
+
+# Ignore built frontend files (if applicable)
+/build/
+/dist/
+
+# Ignore logs and runtime data
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore MongoDB data directory (if applicable)
+/data/
+
+# Ignore local configuration files
+.vscode/
+.idea/
+*.iml

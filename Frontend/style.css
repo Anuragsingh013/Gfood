@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* navbar started */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 4%;
+  border-bottom: 1px solid #0000004a;
+
+  background: #f2f1ec;
+  /* position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10; */
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+.nav-links a {
+  color: #000;
+}
+.nav-links li a:hover {
+  color: orange;
+}
+/* navbar completed */
+
+/* banner section started */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7%;
+  background: #f2f1ec;
+}
+.banner .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .left button {
+  margin-top: 1.2rem;
+  padding: 12px 36px;
+  border-radius: 40px;
+  border: 1px solid #000;
+  outline: 0;
+}
+.banner .left button:hover {
+  background: rgb(231, 163, 36);
+}
+
+.banner .right img {
+  width: 400px;
+  border-radius: 100%;
+}
+
+/* banner completed */
+
+/* choice-section */
+.choice-section {
+  padding: 7%;
+}
+.choice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.choice-container img {
+  width: 220px;
+}
+.choice-container img:hover {
+  transform: scale(1.04);
+}
+/* resturant chain */
+.resturnat-chain-section {
+  padding: 3% 7%;
+}
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  /* gap: 12px; */
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 12px;
+  /* border: 1px solid #ccc; */
+  min-height: 284px;
+  min-width: 273px;
+  background: #ffffffad;
+  backdrop-filter: blur(40px);
+  padding: 12px;
+  font-size: 16px;
+}
+.card p,
+h3 {
+  width: 90%;
+}
+.card:hover {
+  transform: scale(0.9);
+}
+.card img {
+  height: 140px;
+  width: 90%;
+  border-radius: 20px;
+}
+.rating{
+  display: flex;
+  justify-content:flex-start;
+  gap: 12px;
+}
+
+
+/* resturant chain completed */
+
+/* online-resturant-container */
+.online-resturant {
+  padding: 4% 7%;
+}
+.online-resturant-container {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* completed */
+/* download-Gfood section */
+.download-Gfood-container {
+  padding: 4% 7%;
+}
+
+.download-Gfood {
+  padding: 4% 7%;
+  background: #f0f0f5;
+  color: #3d4047;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.download-Gfood img {
+  width: 220px;
+}
+
+/* completed */
+/* footer */
+.footer {
+  width: 100%;
+  padding: 4% 10%;
+  background: #02060c;
+  color: #ebebec;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer a {
+  color: #ebebec;
+  font-size: 12px;
+}
+.footer a:hover {
+  font-size: 14px;
+  color: orange;
+}
+/* footer completed  */
+
+/* media query for small screen */
+@media screen and (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    padding: 12px 10%;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .banner .left {
+    align-items: center;
+  }
+  .banner .right img {
+    width: 90%;
+  }
+  .choice-section {
+    padding: 10%;
+  }
+  .resturnat-chain-section h1 {
+    text-align: center;
+  }
+  /* .card-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+  } */
+  .card{
+
+    border-radius: 12px;
+  }
+  .download-Gfood-container {
+    padding: 4% 7%;
+  }
+  
+  .download-Gfood {
+    padding: 4% 8%;
+    background: #f0f0f5;
+    color: #3d4047;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .download-Gfood h1{
+    font-size: 1.2rem;
+  }
+  .download-Gfood img {
+    width: 220px;
+  }
+
+  .footer {
+    padding: 8% 7%;
+    gap: 12px;
+  }
+  .footer h1{
+    font-size: 16px;
+  }
+  .footer a {
+    color: #ebebec;
+    font-size: 12px;
+  }
+
+  
+}

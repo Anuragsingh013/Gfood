@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        /* You can add your custom styles here */
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold mb-8">Shopping Cart</h1>
+        <div class="grid grid-cols-5 gap-4">
+            <div class="font-bold">Item</div>
+            <div class="font-bold">Price</div>
+            <div class="font-bold">Quantity</div>
+            <div class="font-bold">Total</div>
+            <div></div>
+            <!-- Sample cart items data (replace it with your own data) -->
+            <div id="cart-items" class="col-span-5">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+        </div>
+        <div class="mt-8 flex justify-end">
+            <button id="checkout-btn" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">Checkout</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
